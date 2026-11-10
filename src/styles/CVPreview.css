@@ -1,0 +1,177 @@
+.cv-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px 40px 20px;
+}
+
+.resume-sheet {
+  background: white;
+  width: 100%;
+  max-width: 780px;
+  min-height: 950px;
+  padding: 50px 60px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1e293b;
+  text-align: left;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+.resume-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.contact-info {
+  font-size: 0.92rem;
+  color: #64748b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  color: #cbd5e1;
+}
+
+.resume-section {
+  margin-bottom: 28px;
+}
+
+.resume-section h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.resume-item {
+  margin-bottom: 16px;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: #0f172a;
+}
+
+.item-date {
+  font-size: 0.88rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.item-subtitle {
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.item-company {
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.responsibilities {
+  margin: 6px 0 0 0;
+  font-size: 0.93rem;
+  color: #334155;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.empty-notice {
+  font-style: italic;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Action Buttons Footer */
+.preview-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.print-btn {
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+.print-btn:hover {
+  background-color: #1e293b;
+}
+
+.edit-mode-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+.edit-mode-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+  }
+  
+  .app-container, .cv-preview-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .resume-sheet {
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .preview-actions {
+    display: none;
+  }
+}
